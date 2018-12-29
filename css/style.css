@@ -1,0 +1,94 @@
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+      .container {
+        height: 100%;
+        position: relative;
+      } */
+
+input {
+    font-size: 12px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+#hide-listings, #show-listings {
+    width: 48%;
+}
+
+hr {
+    background: #ffffff;
+    height: 1px;
+    margin: 20px 0 20px 0;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#map {
+    bottom: 0px;
+    height: 100%;
+    /*left: 242px;
+        position: absolute;*/
+    right: 0px;
+    position: fixed;
+}
+
+#toTheTop {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+#showSpots {
+    margin-bottom: 0px;
+}
+
+#pano {
+    width: 200px;
+    height: 200px;
+}
+
+#appTitle {
+    color: #ffffff;
+    padding-bottom: 25px;
+    font-size: 30px;
+}
+
+.text {
+    font-size: 12px;
+}
+
+.spotList:hover {
+    cursor: pointer;
+    /*background: #dddddd;*/
+    color: #ffffff;
+}
+
+.spotList {
+    /*border: 1px solid;
+    border-radius: 5px;*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.showSpots {
+    font-size: 20px;
+}
+
+.showSpots:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
