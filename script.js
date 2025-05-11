@@ -1,11 +1,13 @@
+
+
 const apiKey = "b1a3d7c8-2d18-11f0-bd39-0242ac130003-b1a3d82c-2d18-11f0-bd39-0242ac130003";
 
 const beaches = [
-  { name: "Clearwater Beach", lat: 27.9774, lng: -82.8278 },
-  { name: "St. Pete Beach", lat: 27.7253, lng: -82.7415 },
-  { name: "Indian Rocks Beach", lat: 27.8992, lng: -82.8476 },
-  { name: "Madeira Beach", lat: 27.7986, lng: -82.7971 },
-  { name: "Treasure Island Beach", lat: 27.7703, lng: -82.7685 },
+  { name: "🌴 Sebastian Inlet", lat: 27.8606, lng: -80.4467 },
+  { name: "🏄 Cocoa Beach", lat: 28.3200, lng: -80.6076 },
+  { name: "🐚 Indian Rocks Beach", lat: 27.8992, lng: -82.8476 },
+  { name: "🐬 Madeira Beach", lat: 27.7986, lng: -82.7971 },
+  { name: "☀️ Treasure Island Beach", lat: 27.7703, lng: -82.7685 },
 ];
 
 const beachList = document.getElementById("beachList");
@@ -37,7 +39,7 @@ async function getWaveHeight(beach) {
 
     if (wave !== undefined) {
       const waveInFeet = (wave * 3.28084).toFixed(2);  // Convert meters to feet
-      waveResult.innerHTML = `${beach.name}: 🌊 Wave Height is ${wave.toFixed(2)} meters / ${waveInFeet} feet`;
+      waveResult.innerHTML = `${beach.name}: 🌊 Wave Height is ${waveInFeet} feet`;
     } else {
       waveResult.textContent = "Wave data not available.";
     }
